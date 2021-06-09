@@ -1,23 +1,36 @@
 # So2Sat-LCZ42
-Zhu et al., So2Sat LCZ42: A Benchmark Dataset for Global Local Climate Zones Classification, IEEE Geoscience and Remote Sensing Magazine, in press, 2020. 
+Xiao Xiang Zhu, Jingliang Hu, Chunping Qiu, Yilei Shi, Jian Kang, Lichao Mou, Hossein Bagheri, Matthias Haberle, Yuansheng Hua, Rong Huang, Lloyd Hughes, Hao Li, Yao Sun, Guichen Zhang, Shiyao Han, Michael Schmitt, Yuanyuan Wang (2020). So2Sat LCZ42: A Benchmark Data Set for the Classification of Global Local Climate Zones [Software and Data Sets]. IEEE Geoscience and Remote Sensing Magazine, 8(3), pp. 76–89.
+
+BibTex
+'''
+@ARTICLE{Zhu2020So2Sat,
+  author={Zhu, Xiao Xiang and Hu, Jingliang and Qiu, Chunping and Shi, Yilei and Kang, Jian and Mou, Lichao and Bagheri, Hossein and Haberle, Matthias and Hua, Yuansheng and Huang, Rong and Hughes, Lloyd and Li, Hao and Sun, Yao and Zhang, Guichen and Han, Shiyao and Schmitt, Michael and Wang, Yuanyuan},
+  journal={IEEE Geoscience and Remote Sensing Magazine}, 
+  title={So2Sat LCZ42: A Benchmark Data Set for the Classification of Global Local Climate Zones [Software and Data Sets]}, 
+  year={2020},
+  volume={8},
+  number={3},
+  pages={76-89},
+  doi={10.1109/MGRS.2020.2964708}}
+'''
+## Data Download
+(First version)[https://mediatum.ub.tum.de/1459256?show_id=1454690]
+
+(Second version)[https://mediatum.ub.tum.de/1459256?show_id=1483140]
+
 
 ## Authors: 
 Xiaoxiang Zhu, Jingliang Hu, Chunping Qiu, Yilei Shi, Jian Kang, Lichao Mou, Hossein Bagheri, Matthias Haeberle, Yuansheng Hua, Rong Huang, Lloyd Hughes, Hao Li, Yao Sun, Guichen Zhang, Shiyao Han, Michael Schmitt, Yuanyuan Wang
 
 ## Institute
-Signal Processing in Earth Observation, Technical University of Munich, and Remote Sensing Technology Institute, German Aerospace Center.
+Signal Processing in Earth Observation ((SiPEO)[http://www.sipeo.bgu.tum.de/]), Technical University of Munich, and Remote Sensing Technology Institute, German Aerospace Center.
 
 ## Funding 
 This work is funded by European Research Council starting Grant: 
 
-So2Sat: Big Data for 4D Global Urban Mapping - 10^16 Bytes from Social Media to Earth Observation Satellites
-# Project website: http://www.so2sat.eu/
-# 
-# Team website: http://www.sipeo.bgu.tum.de/
-#
-# ******************************************************************************************
+(So2Sat)[http://www.so2sat.eu/]: Big Data for 4D Global Urban Mapping - 10^16 Bytes from Social Media to Earth Observation Satellites (link)[http://www.so2sat.eu/]
 
-# Description of the files
+## Description of the files
 training.h5:	training data containing SEN1, SEN2 patches and label
 	sen1:	N*32*32*8
 	sen2:	N*32*32*10
@@ -36,10 +49,8 @@ testing.h5:	testing data containing only SEN1 and SEN2 patches,
 read_file.py:	a demo python script to read in the files, and visualize a pair of patches
 		Required python packages: h5py, numpy, and matplotlib.
 
-*note:		testing.h5 will be released in a future version of this dataset
 
-
-# Description of the content of sen1
+## Description of the content of sen1
 Sentinel-1 data bands (the 4th dimension of data):
 	1st band: Real part of original VH complex signal
 	2nd band: Imaginary part of original VH complex signal
@@ -70,9 +81,6 @@ Pixel size: 10m by 10m
 
 Details about the bands can be found: https://sentinels.copernicus.eu/web/sentinel/user-guides/sentinel-2-msi/overview
 
-
-You can download the data from
-https://mediatum.ub.tum.de/1454690
 
 
 The data can be accessed by TensorFlow API directly:
