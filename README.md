@@ -14,16 +14,15 @@ Xiao Xiang Zhu, Jingliang Hu, Chunping Qiu, Yilei Shi, Jian Kang, Lichao Mou, Ho
 ```
 
 ## Data Download
+From Technical University of Munich:
 [First version](https://mediatum.ub.tum.de/1459256?show_id=1454690)
-
 [Second version](https://mediatum.ub.tum.de/1459256?show_id=1483140)
 
-
-## Authors: 
-Xiaoxiang Zhu, Jingliang Hu, Chunping Qiu, Yilei Shi, Jian Kang, Lichao Mou, Hossein Bagheri, Matthias Haeberle, Yuansheng Hua, Rong Huang, Lloyd Hughes, Hao Li, Yao Sun, Guichen Zhang, Shiyao Han, Michael Schmitt, Yuanyuan Wang
+TensorFlow API:
+https://www.tensorflow.org/datasets/catalog/so2sat
 
 ## Institute
-Signal Processing in Earth Observation ([SiPEO](http://www.sipeo.bgu.tum.de/)), Technical University of Munich, and Remote Sensing Technology Institute, German Aerospace Center.
+[Signal Processing in Earth Observation](http://www.sipeo.bgu.tum.de/), Technical University of Munich, and Remote Sensing Technology Institute, German Aerospace Center.
 
 ## Funding 
 This work is funded by European Research Council starting Grant: 
@@ -83,5 +82,4 @@ Details about the bands can be found: https://sentinels.copernicus.eu/web/sentin
 
 
 
-The data can be accessed by TensorFlow API directly:
-https://www.tensorflow.org/datasets/catalog/so2sat
+
