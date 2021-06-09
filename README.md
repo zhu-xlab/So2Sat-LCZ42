@@ -21,7 +21,7 @@ Xiao Xiang Zhu, Jingliang Hu, Chunping Qiu, Yilei Shi, Jian Kang, Lichao Mou, Ho
 ### Technical University of Munich:
 [First version](https://mediatum.ub.tum.de/1459256?show_id=1454690): 
 
-	This version is designed for an [Alibaba AI Challenge](https://tianchi.aliyun.com/competition/entrance/231683/introduction)
+	This version is designed for an Alibaba AI Challenge (https://tianchi.aliyun.com/competition/entrance/231683/introduction)
 	Training: 	42 cities around the world
 	Validation:	western half of 10 other cities covering 10 cultural zones	
 
