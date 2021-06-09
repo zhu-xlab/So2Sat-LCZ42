@@ -38,10 +38,8 @@ training.h5:	training data containing SEN1, SEN2 patches and label
 	
 validation.h5:  validation data containing similar SEN1, SEN2, and label
 
-	sen1:  	M*32*32*8 
-	
-	sen2:  	M*32*32*10
-	
+	sen1:  	M*32*32*8 	
+	sen2:  	M*32*32*10	
 	label: 	M*17 (one-hot coding)
 	
 testing.h5:	testing data containing only SEN1 and SEN2 patches, 
