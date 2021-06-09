@@ -1,5 +1,5 @@
 # So2Sat-LCZ42
-## A visualization
+## A visualization of selected samples
 ![so2sat_lcz42_sample_visualization](https://github.com/zhu-xlab/So2Sat-LCZ42/blob/master/so2sat_lcz42.JPG)
 
 ## Paper
