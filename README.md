@@ -14,8 +14,8 @@ Xiao Xiang Zhu, Jingliang Hu, Chunping Qiu, Yilei Shi, Jian Kang, Lichao Mou, Ho
 ```
 
 ## Data Download
-From Technical University of Munich:
-[First version](https://mediatum.ub.tum.de/1459256?show_id=1454690)
+Technical University of Munich:
+[First version](https://mediatum.ub.tum.de/1459256?show_id=1454690); 
 [Second version](https://mediatum.ub.tum.de/1459256?show_id=1483140)
 
 TensorFlow API:
@@ -31,16 +31,21 @@ This work is funded by European Research Council starting Grant:
 
 ## Description of the files
 training.h5:	training data containing SEN1, SEN2 patches and label
-	sen1:	N*32*32*8
+
+	sen1:	N*32*32*8	
 	sen2:	N*32*32*10
 	label:	N*17 (one-hot coding)
 	
 validation.h5:  validation data containing similar SEN1, SEN2, and label
+
 	sen1:  	M*32*32*8 
+	
 	sen2:  	M*32*32*10
+	
 	label: 	M*17 (one-hot coding)
 	
 testing.h5:	testing data containing only SEN1 and SEN2 patches, 
+
 	sen1:  	L*32*32*8
 	sen2:  	L*32*32*10
 	label:  L*17 (one-hot coding)
@@ -51,6 +56,7 @@ read_file.py:	a demo python script to read in the files, and visualize a pair of
 
 ## Description of the content of sen1
 Sentinel-1 data bands (the 4th dimension of data):
+
 	1st band: Real part of original VH complex signal
 	2nd band: Imaginary part of original VH complex signal
 	3rd band: Real part of original VV complex signal
@@ -65,6 +71,7 @@ Pixel size: 10m by 10m
 
 # Description of the content of sen2
 Sentinel-2 data bands (the 4th dimension of data):
+
 	1st band: B2
 	2nd band: B3
 	3rd band: B4
