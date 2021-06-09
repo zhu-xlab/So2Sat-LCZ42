@@ -32,7 +32,7 @@ Xiao Xiang Zhu, Jingliang Hu, Chunping Qiu, Yilei Shi, Jian Kang, Lichao Mou, Ho
 	Validation:	western half of 10 other cities covering 10 cultural zones
 	Testing:	eastern half of the 10 other cities	
 
-[Third version (come soon)]():
+[Third version (come soon)](https://github.com/zhu-xlab/So2Sat-LCZ42):
 
 	This is the "3 splits version" of the So2Sat LCZ42 dataset. It provides three training/testing data split scenarios:
 	1. Random split: 80% training / 20% testing (randomly sampled)
