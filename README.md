@@ -14,30 +14,26 @@ Xiao Xiang Zhu, Jingliang Hu, Chunping Qiu, Yilei Shi, Jian Kang, Lichao Mou, Ho
 ```
 
 ## Data Download
-Technical University of Munich:
-
-[First version](https://mediatum.ub.tum.de/1459256?show_id=1454690) (This version is designed for an [Alibaba AI Challenge](https://tianchi.aliyun.com/competition/entrance/231683/introduction)): 
-
+### Technical University of Munich:
+[First version](https://mediatum.ub.tum.de/1459256?show_id=1454690): 
+	This version is designed for an [Alibaba AI Challenge](https://tianchi.aliyun.com/competition/entrance/231683/introduction)
 	Training: 	42 cities around the world
 	Validation:	western half of 10 other cities covering 10 cultural zones	
 
 [Second version](https://mediatum.ub.tum.de/1459256?show_id=1483140):
-
+	This version completes the first version with the testing data
 	Training: 	42 cities around the world
 	Validation:	western half of 10 other cities covering 10 cultural zones
-	Testing:	eastern half of the 10 other cities
-	
+	Testing:	eastern half of the 10 other cities	
 
 [Third version (come soon)]():
-
 	This is the "3 splits version" of the So2Sat LCZ42 dataset. It provides three training/testing data split scenarios:
 	1. Random split: 80% training / 20% testing (randomly sampled)
 	2. Block split: every city is split in a geospatial 80%/20%-manner
 	3. Cultural 10: 10 cities from different cultural zones are held back for testing purposes
-
-TensorFlow API:
-
+### TensorFlow API:
 https://www.tensorflow.org/datasets/catalog/so2sat
+
 
 ## Institute
 [Signal Processing in Earth Observation](http://www.sipeo.bgu.tum.de/), Technical University of Munich, and Remote Sensing Technology Institute, German Aerospace Center.
