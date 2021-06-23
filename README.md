@@ -35,7 +35,7 @@ Xiao Xiang Zhu, Jingliang Hu, Chunping Qiu, Yilei Shi, Jian Kang, Lichao Mou, Ho
 [Third version (come soon)](https://github.com/zhu-xlab/So2Sat-LCZ42):
 
 	This is the "3 splits version" of the So2Sat LCZ42 dataset. It provides three training/testing data split scenarios:
-	1. Random split: 80% training / 20% testing (randomly sampled)
+	1. Random split: every city 80% training / 20% testing (randomly sampled)
 	2. Block split: every city is split in a geospatial 80%/20%-manner
 	3. Cultural 10: 10 cities from different cultural zones are held back for testing purposes
 ### TensorFlow API:
