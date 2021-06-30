@@ -1,7 +1,7 @@
 # So2Sat-LCZ42
 ## A visualization of selected samples
 ![so2sat_lcz42_sample_visualization](https://github.com/zhu-xlab/So2Sat-LCZ42/blob/master/so2sat_lcz42.JPG)
-
+>This figure is cited from the following paper
 ## Paper
 Xiao Xiang Zhu, Jingliang Hu, Chunping Qiu, Yilei Shi, Jian Kang, Lichao Mou, Hossein Bagheri, Matthias Haberle, Yuansheng Hua, Rong Huang, Lloyd Hughes, Hao Li, Yao Sun, Guichen Zhang, Shiyao Han, Michael Schmitt, Yuanyuan Wang (2020). So2Sat LCZ42: A Benchmark Data Set for the Classification of Global Local Climate Zones [Software and Data Sets]. IEEE Geoscience and Remote Sensing Magazine, 8(3), pp. 76–89. [Paper](https://ieeexplore.ieee.org/document/9014553)
 
