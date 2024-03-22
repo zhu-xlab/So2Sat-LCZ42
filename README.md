@@ -104,7 +104,7 @@ Sentinel-2 data bands (the 4th dimension of data):
 
 Pixel size: 10m by 10m
 
-The pixel values are devided by 10e4 to decimal reflectance.
+The pixel values are devided by 10,000 to decimal reflectance.
 
 Details about the bands can be found: https://sentinels.copernicus.eu/web/sentinel/user-guides/sentinel-2-msi/overview
 
