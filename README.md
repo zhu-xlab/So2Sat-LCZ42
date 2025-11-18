@@ -88,7 +88,7 @@ Sentinel-1 data bands (the 4th dimension of data):
 Pixel size: 10m by 10m
 
 
-# Description of the content of sen2
+## Description of the content of sen2
 Sentinel-2 data bands (the 4th dimension of data):
 
 	1st band: B2
@@ -109,5 +109,23 @@ The pixel values are devided by 10,000 to decimal reflectance.
 Details about the bands can be found: https://sentinels.copernicus.eu/web/sentinel/user-guides/sentinel-2-msi/overview
 
 
+## Adding geolocation
+For convenience of follow-up research, we release the geolocation information for each patch in the dataset, as auxiliary files matching the [Second version](https://mediatum.ub.tum.de/1459256?show_id=1483140) (culture-10).
 
+```
+- training_aux.h5
+	- coord: N*6 # UTM X, UTM Y, SEN1 row number, SEN1 col number, SEN2 row number, SEN2 col number
+	- epsg: N*1 # EPSG code
+	- tfw: N*6 # six parameters used to generate a TFW file
+- validation_aux.h5
+	- coord: M*6
+	- epsg: M*1
+	- tfw: M*6
+- testing_aux.h5
+	- coord: L*6
+	- epsg: L*1
+	- tfw: L*6
+```
+
+We provide a demo notebook [`demo_geotiff.ipynb`](demo_geotiff.ipynb) to load the image and geolocation, and generate a geotiff file from them.
 
