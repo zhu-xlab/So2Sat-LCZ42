@@ -63,7 +63,7 @@ validation.h5:  validation data containing similar SEN1, SEN2, and label
 	sen2:  	M*32*32*10	
 	label: 	M*17 (one-hot coding)
 	
-testing.h5:	testing data containing only SEN1 and SEN2 patches, 
+testing.h5:	testing data containing SEN1, SEN2 patches and label
 
 	sen1:  	L*32*32*8
 	sen2:  	L*32*32*10
@@ -88,7 +88,7 @@ Sentinel-1 data bands (the 4th dimension of data):
 Pixel size: 10m by 10m
 
 
-# Description of the content of sen2
+## Description of the content of sen2
 Sentinel-2 data bands (the 4th dimension of data):
 
 	1st band: B2
@@ -109,5 +109,27 @@ The pixel values are devided by 10,000 to decimal reflectance.
 Details about the bands can be found: https://sentinels.copernicus.eu/web/sentinel/user-guides/sentinel-2-msi/overview
 
 
+## Adding geolocation (2025 update!)
+We release the geolocation information for each patch in the dataset, extending the [second version](https://mediatum.ub.tum.de/1459256?show_id=1483140) (culture-10) to the [fourth version](https://mediatum.ub.tum.de/1836598). You can also download this version from [HuggingFace](https://huggingface.co/datasets/zhu-xlab/So2Sat-LCZ42).
 
+```
+# These are the same as the second version. If you have already downloaded them, you don't need to download them again.
+- training.h5
+	- sen1:	N*32*32*8	
+	- sen2:	N*32*32*10
+	- label: N*17 (one-hot coding)
+- validation.h5
+- testing.h5
+
+# These are geolocation data in the same order as the image data.
+- training_geo.h5
+	- coord: N*6 # UTM X, UTM Y, SEN1 row number, SEN1 col number, SEN2 row number, SEN2 col number
+	- epsg: N*1 # EPSG code
+	- tfw: N*6 # six parameters used to generate a TFW file
+- validation_geo.h5
+- testing_geo.h5
+
+```
+
+We provide a demo notebook [`demo_geotiff.ipynb`](demo_geotiff.ipynb) to load the image and geolocation, and generate a geotiff file from them.
 
