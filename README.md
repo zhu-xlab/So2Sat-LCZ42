@@ -109,7 +109,7 @@ The pixel values are devided by 10,000 to decimal reflectance.
 Details about the bands can be found: https://sentinels.copernicus.eu/web/sentinel/user-guides/sentinel-2-msi/overview
 
 
-## Adding geolocation
+## Adding geolocation (2025 update!)
 We release the geolocation information for each patch in the dataset, extending the [second version](https://mediatum.ub.tum.de/1459256?show_id=1483140) (culture-10) to the [fourth version](https://mediatum.ub.tum.de/1836598). You can also download this version from [HuggingFace](https://huggingface.co/datasets/zhu-xlab/So2Sat-LCZ42).
 
 ```
