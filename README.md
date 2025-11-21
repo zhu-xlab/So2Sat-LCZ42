@@ -113,7 +113,7 @@ Details about the bands can be found: https://sentinels.copernicus.eu/web/sentin
 We release the geolocation information for each patch in the dataset, extending the [second version](https://mediatum.ub.tum.de/1459256?show_id=1483140) (culture-10) to the [fourth version](https://mediatum.ub.tum.de/1836598). You can also download this version from [HuggingFace](https://huggingface.co/datasets/zhu-xlab/So2Sat-LCZ42).
 
 ```
-# These are the same as the second version.
+# These are the same as the second version. If you have already downloaded them, you don't need to download them again.
 - training.h5
 	- sen1:	N*32*32*8	
 	- sen2:	N*32*32*10
