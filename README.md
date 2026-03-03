@@ -109,7 +109,10 @@ The pixel values are devided by 10,000 to decimal reflectance.
 Details about the bands can be found: https://sentinels.copernicus.eu/web/sentinel/user-guides/sentinel-2-msi/overview
 
 
-## Adding geolocation (2025 update!)
+## Adding geolocation (2025 update)
+
+> **2026-02 (EPSG code issue):** We are investigating a bug (thanks to community feedback!) affecting the EPSG code (epsg) for some cities in `training_geo.h5`. A corrected release is in progress and will be uploaded as soon as it’s ready.
+
 We release the geolocation information for each patch in the dataset, extending the [second version](https://mediatum.ub.tum.de/1459256?show_id=1483140) (culture-10) to the [fourth version](https://mediatum.ub.tum.de/1836598). You can also download this version from [HuggingFace](https://huggingface.co/datasets/zhu-xlab/So2Sat-LCZ42).
 
 ```
