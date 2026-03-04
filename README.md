@@ -111,7 +111,9 @@ Details about the bands can be found: https://sentinels.copernicus.eu/web/sentin
 
 ## Adding geolocation (2025 update)
 
-> **2026-02 (EPSG code issue):** We are investigating a bug (thanks to community feedback!) affecting the EPSG code (epsg) for some cities in `training_geo.h5`. A corrected release is in progress and will be uploaded as soon as it’s ready.
+> **2026-03:** We have updated the `*_geo.h5` files with corrected EPSG codes, removed unnecessary "coord" entry, and added the "city" entry for convenience. You can refer to `save_geotiff.py` to generate geotiff files for each patch and organize them acoording to the city name. The new data has been updated in [HuggingFace](https://huggingface.co/datasets/zhu-xlab/So2Sat-LCZ42), and will be updated in [mediatum](https://mediatum.ub.tum.de/1836598) soon.
+
+> ~~**2026-02 (EPSG code issue):** We are investigating a bug (thanks to community feedback!) affecting the EPSG code (epsg) for some cities in `training_geo.h5`. A corrected release is in progress and will be uploaded as soon as it’s ready.~~
 
 We release the geolocation information for each patch in the dataset, extending the [second version](https://mediatum.ub.tum.de/1459256?show_id=1483140) (culture-10) to the [fourth version](https://mediatum.ub.tum.de/1836598). You can also download this version from [HuggingFace](https://huggingface.co/datasets/zhu-xlab/So2Sat-LCZ42).
 
@@ -126,13 +128,13 @@ We release the geolocation information for each patch in the dataset, extending 
 
 # These are geolocation data in the same order as the image data.
 - training_geo.h5
-	- coord: N*6 # UTM X, UTM Y, SEN1 row number, SEN1 col number, SEN2 row number, SEN2 col number
 	- epsg: N*1 # EPSG code
 	- tfw: N*6 # six parameters used to generate a TFW file
+	- city: N*1 # city name
 - validation_geo.h5
 - testing_geo.h5
 
 ```
 
-We provide a demo notebook [`demo_geotiff.ipynb`](demo_geotiff.ipynb) to load the image and geolocation, and generate a geotiff file from them.
+We provide a demo notebook [`demo_geotiff.ipynb`](demo_geotiff.ipynb) to load the image and geolocation, and generate a geotiff file from them. You can also refer to the script [`save_geotiff.py`](save_geotiff.py) to generate geotiff files for all patches and organize them according to the city name.
 
